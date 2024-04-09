@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  background-color: #fff; /* Fundo branco */
+  padding: 10px 20px; /* Espaçamento interno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 40px; /* Altura do logo */
+  margin-right: 10px; /* Espaçamento à direita */
+}
+
+nav span {
+  font-size: 1.2rem; /* Tamanho do texto */
+  font-weight: bold; /* Negrito */
+  color: #333; /* Cor do texto */
+}
+
+
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Largura máxima do banner */
+  margin: 0 auto; /* Centraliza o banner na página */
+  height: 400px;
+  overflow: hidden;
+}
+  
+  
+  .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } 
+
+
+
+  .product-cards {
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px; /* Largura máxima dos cards */
+    margin: 0 auto; /* Centraliza os cards na página */
+    margin-top: 50px;
+  }
+  
+  .product-card {
+    background-color: #F5FFFA;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    flex: 0 0 calc(33% - 40px);
+  }
+  
+  .product-card img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 300px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Redimensiona a imagem para preencher o contêiner mantendo a proporção */
+  }
+    
+  
+  
+  .product-details {
+    padding: 10px;
+  }
+  
+  .product-details h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .product-details p {
+    color: #f0c14b;
+    font-weight: bold;
+  }
+  
+  .product-details button {
+    background-color: #f0c14b;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+
+  .footer {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0c14b; /* Amarelo */
+    color: #fff; /* Texto branco */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer a {
+    color: #fff; /* Links brancos */
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
